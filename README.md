@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Data persistence is handled by Firebase Authentication, just a simple email/password, no confirmation mail or anything. Simple caching done through localstorage, but not completely happy with the size if the user scrolls quite far
+
+To run the project, the usual: npm install then npm start.
+
+TODO/If I had more time:
+1. Ideally, I would have written tests immediately after writing the store logic, but for the sake of saving time, I skipped it
+2. Adding pagination via a slider instead of pages, since it should have been a mobile-first design. Again, saving time etc.
+3. Small feature of removing pokemon from My Pokemon (partly finished, not tested)
+4. Bugfixing, most likely
+5. Adding error boundary and fallback UI to improve UX
+
+
 ## Available Scripts
 
 In the project directory, you can run:
