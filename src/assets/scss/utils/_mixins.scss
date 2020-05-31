@@ -1,0 +1,48 @@
+@mixin pokemonCardPrimaryBackground($color) {
+  background-color: map_get($pokemon-type-color, $color)
+}
+
+@mixin pokemonCardSecondaryBackground($color) {
+  background-color: map_get($pokemon-type-color, $color)
+}
+@mixin button {
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+
+}
+@mixin button-add {
+  @include button;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background: $color-yellow;
+  color: $color-accent;
+  font-size: 30px;
+  position: absolute;
+  &::after {
+    content: '+'
+  }
+}
+
+@mixin app-button {
+  @include button;
+  color: $color-yellow;
+  background: $color-background;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  &:hover {
+    background: $color-accent;
+    cursor: pointer;
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}

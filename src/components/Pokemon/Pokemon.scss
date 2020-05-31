@@ -1,0 +1,151 @@
+
+.pokemonCard {
+  display: flex;
+  width:  70%;
+  max-width: 175px;
+  height: 230px;
+  position: relative;
+  flex-direction: column;
+  border-radius: 9px;
+  margin: 10px 20px;
+  &__title {
+    font-size: 1.5em;
+    z-index: 2;
+  }
+  &--primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      z-index: 2;
+      height: 100px;
+      width: 100px;
+      position: relative;
+      bottom: 8%;
+    }
+    button {
+      @include button-add;
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      z-index: 2;
+    }
+  }
+  &--secondary {
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    bottom: 25%;
+  }
+  &--primary--normal {
+    @include pokemonCardPrimaryBackground(normal)
+  }
+  &--primary--fighting {
+    @include pokemonCardPrimaryBackground(fighting)
+  }
+  &--primary--flying {
+    @include pokemonCardPrimaryBackground(flying)
+  }
+  &--primary--poison {
+    @include pokemonCardPrimaryBackground(poison)
+  }
+  &--primary--ground {
+    @include pokemonCardPrimaryBackground(ground)
+  }
+  &--primary--rock {
+    @include pokemonCardPrimaryBackground(rock)
+  }
+  &--primary--bug {
+    @include pokemonCardPrimaryBackground(bug)
+  }
+  &--primary--ghost {
+    @include pokemonCardPrimaryBackground(ghost)
+  }
+  &--primary--steel {
+    @include pokemonCardPrimaryBackground(steel)
+  }
+  &--primary--fire {
+    @include pokemonCardPrimaryBackground(fire)
+  }
+  &--primary--grass {
+    @include pokemonCardPrimaryBackground(grass)
+  }
+  &--primary--water {
+    @include pokemonCardPrimaryBackground(water)
+  }
+  &--primary--electric {
+    @include pokemonCardPrimaryBackground(electric)
+  }
+  &--primary--psychic {
+    @include pokemonCardPrimaryBackground(psychic)
+  }
+  &--primary--ice {
+    @include pokemonCardPrimaryBackground(ice)
+  }
+  &--primary--dragon {
+    @include pokemonCardPrimaryBackground(dragon)
+  }
+  &--primary--dark {
+    @include pokemonCardPrimaryBackground(dark)
+  }
+  &--primary--fairy {
+    @include pokemonCardPrimaryBackground(fairy)
+  }
+  &--secondary--normal {
+    @include pokemonCardSecondaryBackground(normal)
+  }
+  &--secondary--fighting {
+    @include pokemonCardSecondaryBackground(fighting)
+  }
+  &--secondary--flying {
+    @include pokemonCardSecondaryBackground(flying)
+  }
+  &--secondary--poison {
+    @include pokemonCardSecondaryBackground(poison)
+  }
+  &--secondary--ground {
+    @include pokemonCardSecondaryBackground(ground)
+  }
+  &--secondary--rock {
+    @include pokemonCardSecondaryBackground(rock)
+  }
+  &--secondary--bug {
+    @include pokemonCardSecondaryBackground(bug)
+  }
+  &--secondary--ghost {
+    @include pokemonCardSecondaryBackground(ghost)
+  }
+  &--secondary--steel {
+    @include pokemonCardSecondaryBackground(steel)
+  }
+  &--secondary--fire {
+    @include pokemonCardSecondaryBackground(fire)
+  }
+  &--secondary--grass {
+    @include pokemonCardSecondaryBackground(grass)
+  }
+  &--secondary--water {
+    @include pokemonCardSecondaryBackground(water)
+  }
+  &--secondary--electric {
+    @include pokemonCardSecondaryBackground(electric)
+  }
+  &--secondary--psychic {
+    @include pokemonCardSecondaryBackground(psychic)
+  }
+  &--secondary--ice {
+    @include pokemonCardSecondaryBackground(ice)
+  }
+  &--secondary--dragon {
+    @include pokemonCardSecondaryBackground(dragon)
+  }
+  &--secondary--dark {
+    @include pokemonCardSecondaryBackground(dark)
+  }
+  &--secondary--fairy {
+    @include pokemonCardSecondaryBackground(fairy)
+  }
+}

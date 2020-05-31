@@ -1,0 +1,29 @@
+$color-accent: #F25F5C;
+$color-primary: #50514F;
+$color-background: #70C1B3;
+$color-yellow: #FFE066;
+$color-blue: #247BA0;
+
+
+@use "sass:map";
+
+$pokemon-type-color: (
+        normal: rgba(#AE967A, .1),
+        fighting: rgba(#D22121, .1),
+        flying: rgba(#AAB4DD, .1),
+        poison: rgba(#A33DF0, .1),
+        ground: rgba(#EDC754, .1),
+        rock: rgba(#CC9C21, .1),
+        bug: rgba(#0AEE2C, .1),
+        ghost: rgba(#7A4192, .1),
+        steel: rgba(#A5A5A5, .1),
+        fire: rgba(#FABF78, .1),
+        grass: rgba(#669D4D, .1),
+        water: rgba(#1D1EF9, .1),
+        electric: rgba(#FFDC5C, .1),
+        psychic: rgba(#F924EE, .1),
+        ice: rgba(#45FCFB, .1),
+        dragon: rgba(#6A5DB1, .1),
+        dark: rgba(#747474, .1),
+        fairy: rgba(#EB9C9C, .1),
+)

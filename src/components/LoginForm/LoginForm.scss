@@ -1,0 +1,26 @@
+.login {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  input {
+      border:0;
+      border-bottom:1px solid $color-background;
+      background:transparent;
+      width:100%;
+      padding:8px 0 5px 0;
+      font-size:16px;
+      color:$color-primary;
+    &:focus{
+      border:none;
+      outline:none;
+      border-bottom:1px solid $color-accent;
+    }
+  }
+  button {
+    @include app-button;
+    margin-top: 20px;
+  }
+  .sign-up {
+    cursor: pointer;
+  }
+}
