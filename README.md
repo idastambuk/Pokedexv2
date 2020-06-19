@@ -4,11 +4,11 @@ Data persistence is handled by Firebase Authentication, just a simple email/pass
 
 To run the project, the usual: npm install then npm start.
 
-TODO/If I had more time:
-1. Ideally, I would have written tests immediately after writing the store logic, but for the sake of saving time, I skipped it
-2. Adding pagination via a slider instead of pages, since it should have been a mobile-first design. Again, saving time etc.
+TODO
+1. \unit tests fr sagas and reducers
+2. Adding pagination via a slider instead of pages.
 3. Small feature of removing pokemon from My Pokemon (partly finished, not tested)
-4. Bugfixing, most likely
+4. Bugfixing
 5. Adding error boundary and fallback UI to improve UX
 
 
